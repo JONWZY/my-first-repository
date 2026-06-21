@@ -41,7 +41,7 @@ class BankAccount{
     {
         if(password==enteredPassword)
         {
-           if(amount<balance)
+           if(amount<=balance)
            {
                 balance=balance-amount;
                 std::cout<<"Withraw succeful";
