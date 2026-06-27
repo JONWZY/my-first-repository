@@ -38,14 +38,14 @@ class Character
   
   virtual ~Character()
   {
-      std::cout<<"Delate succesfuly"<<std::endl;
+      std::cout<<" Delate succesfuly"<<std::endl;
   }
   
   virtual void attack()
   {
       
       
-      std::cout<<name <<"launches a basic physical strike!"<<std::endl;
+      std::cout<<name <<" launches a basic physical strike!"<<std::endl;
      
   } 
   
@@ -65,7 +65,7 @@ class Warrior: public Character
     
     void attack() override
     {
-        std::cout<<name<<"swings a massive sword causing critical damage!"<<std::endl;
+        std::cout<<name<<" swings a massive sword causing critical damage!"<<std::endl;
     }
     
     
@@ -78,12 +78,13 @@ class Mage: public Character
     
     
     
-    public:Mage(std::string namer):Character(namer){}
+    public:
+    Mage(std::string namer):Character(namer){}
   
     
     void attack() override
     {
-        std::cout<<name<<"casts a powerful fireball spell!"<<std::endl;
+        std::cout<<name<<" casts a powerful fireball spell!"<<std::endl;
     }
     
     
